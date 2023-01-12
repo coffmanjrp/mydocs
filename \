@@ -1,0 +1,72 @@
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ll='ls -l'
+alias vi="nvim"
+alias vim="nvim"
+alias oldvim="\vim"
+alias view="nvim -R"
+alias vimdiff="nvim -d"
+alias fcd='source ~/sh/fcd.sh'
+alias vpc-fluent-dev="sshuttle --ssh-cmd 'ssh -i ~/.ssh/google_compute_engine' -r paulcoffmanjr@34.123.197.181 0/0"
+alias srv-fluent-guest01="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest01' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-guest02="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest02' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-guest03="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest03' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-guest04="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest04' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-guest05="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest05' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-guest06="gcloud beta compute ssh --zone 'us-central1-a' 'fluent-guest06' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent01="gcloud beta compute ssh --zone 'us-central1-a' 'fluent01' --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-handson01="gcloud compute ssh --zone 'us-central1-a' 'fluent-handson01'  --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-fluent-handson02="gcloud compute ssh --zone 'us-central1-a' 'fluent-handson02'  --tunnel-through-iap --project 'crypto-monolith-269301'"
+alias srv-ec2-amazon-linux="ssh -i "~/aws/ctca.pem" ec2-user@ec2-52-53-183-216.us-west-1.compute.amazonaws.com"
+alias srv-ec2-kafka-broker="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-18-236-100-0.us-west-2.compute.amazonaws.com"
+alias srv-ec2-kafka-consumer="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-54-212-39-33.us-west-2.compute.amazonaws.com"
+alias srv-ec2-fluent-kafka-handson="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-52-43-79-153.us-west-2.compute.amazonaws.com"
+alias srv-ec2-fluent-handson-master="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-18-236-163-102.us-west-2.compute.amazonaws.com"
+alias srv-ec2-fluent-handson-worker-1="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-54-202-64-42.us-west-2.compute.amazonaws.com"
+alias srv-ec2-fluent-handson-worker-2="ssh -i "~/aws/fluent-handson.pem" ec2-user@ec2-34-216-114-246.us-west-2.compute.amazonaws.com"
+alias srv-ec2-centos6="ssh -i "~/aws/ctca.pem" centos@ec2-18-144-62-106.us-west-1.compute.amazonaws.com"
+alias srv-ec2-centos7="ssh -i "~/aws/ctca.pem" centos@ec2-13-56-161-94.us-west-1.compute.amazonaws.com"
+alias srv-ec2-centos8="ssh -i "~/aws/ctca.pem" centos@ec2-13-56-188-134.us-west-1.compute.amazonaws.com"
+alias srv-kafka01="gcloud compute ssh --zone "us-central1-a" "kefka01"  --tunnel-through-iap --project "crypto-monolith-269301""
+alias srv-kafka02="gcloud compute ssh --zone "us-central1-a" "kafka02"  --tunnel-through-iap --project "crypto-monolith-269301""
+alias srv-kafka03="gcloud compute ssh --zone "us-central1-a" "kafka03"  --tunnel-through-iap --project "crypto-monolith-269301""
+alias srv-kafka04="gcloud compute ssh --zone "us-central1-a" "kafka04"  --tunnel-through-iap --project "crypto-monolith-269301""
+alias srv-mgmt01="gcloud compute ssh --zone "us-central1-a" "mgmt01"  --project "crypto-monolith-269301""
+alias srv-mgmt02="gcloud compute ssh --zone "us-central1-a" "mgmt02"  --tunnel-through-iap --project "crypto-monolith-269301""
+
+## Disable beep
+# setopt no_beep
+## pushd when change directory
+setopt auto_pushd
+## Delete duplicates when pushd
+setopt pushd_ignore_dups
+## Move to matching directory without cd
+setopt auto_cd
+## Same command as the previous one will not be added to the history
+setopt hist_ignore_dups
+## Share history with other zsh tabs/windows
+setopt share_history
+## Save the history immediately
+setopt inc_append_history
+
+## History settings
+export HISTFILE=~/.zsh_history
+export HISTSIZE=100000
+export SAVEHIST=100000
+
+## pyenv ~Simple Python Version Management~
+## https://github.com/pyenv/pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+## fnm ~Fast Node Manager~ Fast and simple Node.js version manager, built in Rust
+## https://github.com/Schniz/fnm
+export PATH="/Users/paulcoffmanjr/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
+
+## Tab completion library for Git
+autoload -Uz compinit && compinit

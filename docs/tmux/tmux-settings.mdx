@@ -1,0 +1,24 @@
+---
+sidebar_position: 1
+---
+
+# Tmux settings
+How to change prefixes (optional)
+- Create `.tmux.conf` file
+- Open with a text editor
+- Set the following settings
+```
+unbind C-d
+set -g prefix C-g
+bind C-g send-prefix
+```
+How to set the divide pane key-bind
+```
+bind \\ split-window -h
+bind - split-window -v
+```
+How to set the display distance of the pane number
+- Add the following setting to `.tmux.conf`
+```
+set -g display-panes-time 3000
+```

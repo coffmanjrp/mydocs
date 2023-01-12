@@ -59,9 +59,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'MyDocs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'My Docs Logo',
           src: 'img/logo.svg',
         },
         // items: [

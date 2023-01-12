@@ -62,7 +62,7 @@ const config = {
         title: 'MyDocs',
         logo: {
           alt: 'My Docs Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         // items: [
         //   {
@@ -122,7 +122,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright &copy; ${new Date().getFullYear()} MyDoc, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

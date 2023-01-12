@@ -1,9 +1,8 @@
 {
-  "label": "🪟 Tmux",
+  "label": "Tmux",
   "position": 2,
   "link": {
     "type": "generated-index",
     "description": "A reminder about learning Tmux"
   }
 }
-

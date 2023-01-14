@@ -2,23 +2,41 @@
 sidebar_position: 1
 ---
 
-# Tmux settings
-How to change prefixes (optional)
-- Create `.tmux.conf` file
-- Open with a text editor
-- Set the following settings
+# Customizing Tmux settings
+Take control of your Tmux experience by customizing the settings file.
+### Change the prefix key
+By default, the prefix key for Tmux is "b". However, you can change it to a different key by following these steps:
+1. Create a file called "`.tmux.conf`" in your home directory.
+2. Open the file with a text editor.
+3. Set the following settings in the file:
 ```
 unbind C-d
 set -g prefix C-g
 bind C-g send-prefix
 ```
-How to set the divide pane key-bind
+This will change the prefix key to "g" instead of the default "b".
+### Customize divide pane keys
+To set the divide pane key-bind, you can add the following settings in the `.tmux.conf` file:
 ```
 bind \\ split-window -h
 bind - split-window -v
 ```
-How to set the display distance of the pane number
-- Add the following setting to `.tmux.conf`
+This will allow you to use "\" to split panes horizontally and "-" to split panes vertically, respectively.
+### Change the display time of pane numbers 
+To adjust the display time of pane numbers, add the following line to the file:
 ```
 set -g display-panes-time 3000
 ```
+This will make the pane numbers visible for 3 seconds.
+### Escape from Vim mode more quickly
+To set the faster escape time in Vim mode, add the following line to the file:
+```
+set -s escape-time 0
+```
+### Switch windows with shift + arrow
+To switch between windows using shift + arrow keys, add the following lines to the file:
+```
+bind -n S-Left previous-window
+bind -n S-Right next-window
+```
+Make sure to save the changes and restart Tmux for the new settings to take effect.

@@ -1,0 +1,49 @@
+---
+sidebar_position: 1
+---
+# Installing Tmux
+This guide provides step-by-step instructions on how to install Tmux on various operating systems.
+### Linux
+1. Install Tmux by running the following command in the terminal:
+```sh
+yum install tmux (for Fedora, Red Hat-based systems)
+```
+```sh
+sudo apt-get install tmux (for Ubuntu, Debian-based systems)
+```
+2. Verify the installation by running: 
+```sh
+tmux -V
+```
+### Mac
+1. Install Homebrew, a package manager for Mac, by running the following command in the terminal:
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Use Homebrew to install Tmux by running the following command in the terminal:
+```sh
+brew install tmux
+```
+3. Verify the installation by running: 
+```sh
+tmux -V
+```
+### Windows
+1. Install the Windows Subsystem for Linux (WSL) by following the instructions from the official documentation.<br/> 
+[Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+2. Once WSL is installed, open the Linux terminal and install Tmux by running the following command:
+```sh
+sudo apt-get install tmux
+```
+3. Verify the installation by running:
+```sh
+tmux -V
+```
+<br/>
+
+Once Tmux is installed, you can start it by running the command `tmux` in your terminal.
+Please note that the command may be different based on the package manager you are using on your Linux system.
+
+### References
+
+[Home · tmux/tmux Wiki - GitHub](https://github.com/tmux/tmux/wiki)

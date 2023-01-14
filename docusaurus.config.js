@@ -26,7 +26,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','ja'],
   },
 
   presets: [
@@ -63,7 +63,11 @@ const config = {
           alt: 'My Docs Logo',
           src: 'img/logo.png',
         },
-        // items: [
+        items: [
+          {
+            type: 'localeDropdown',
+            position: 'right'
+          }
         //   {
         //     type: 'doc',
         //     docId: 'intro',
@@ -76,7 +80,7 @@ const config = {
         //     label: 'GitHub',
         //     position: 'right',
         //   },
-        // ],
+         ],
       },
       footer: {
         style: 'dark',

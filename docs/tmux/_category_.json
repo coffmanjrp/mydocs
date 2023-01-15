@@ -1,6 +1,6 @@
 {
   "label": "Tmux",
-  "position": 3,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Tmux is a terminal multiplexer software that allows users to run multiple terminal sessions within one window and switch between them easily. It also provides features like session management, window management, and copy-and-paste functionality. It can be controlled with keyboard shortcuts and commands, and can be customized via a configuration file. It's available for most operating systems and can be installed via package managers."

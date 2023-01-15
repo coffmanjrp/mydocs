@@ -1,6 +1,6 @@
 {
   "label": "iTerm2",
-  "position": 2,
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "iTerm2 is a terminal emulator for macOS. It is a replacement for the built-in Terminal app and provides additional features such as split-panes, search, and autocomplete. It also allows users to customize the appearance and behavior of the terminal through various settings and themes."

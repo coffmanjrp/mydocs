@@ -1,0 +1,38 @@
+---
+sidebar_position: 1
+---
+
+# Installing zsh
+## Mac
+With macOS Catalina (10.15) and newer versions, zsh is the default shell on macOS systems instead of bash. <br/>
+For macOS versions older than Catalina, zsh is not pre-installed by default. However, it is included in the OS and can be easily installed using the package manager Homebrew by running the command:
+```
+brew install zsh
+```
+You can check which shell you are currently using by running the command `echo $SHELL`. If the output is "`/bin/bash`", you are using bash. If the result is "`/bin/zsh`", then you are using zsh.<br/>
+Once installed, you can set zsh as your default shell by running the command `chsh -s $(which zsh)` and restarting your terminal emulator.
+## Linux
+To install zsh on a Linux system, you can use the package manager of your distribution. Here are the commands for some popular distributions:
+
+Ubuntu/Debian:
+```
+sudo apt-get install zsh
+```
+Fedora/Red Hat:
+```
+sudo yum install zsh
+```
+## Windows
+Windows do not natively support zsh, but you can use the Windows Subsystem for Linux (WSL) to run a Linux distribution on Windows and then install zsh on that distribution. To enable WSL on Windows, you can follow these steps:
+
+1. Open the Microsoft Store and search for "Linux"
+1. Select and install a Linux distribution of your choice (e.g. Ubuntu)
+1. Open the Linux distribution from the start menu
+1. Follow the instructions to set up a user account
+1. Once you're logged in, you can install zsh by running the appropriate command for your distribution (e.g. `sudo apt-get install zsh`)
+
+Once installed, you can set zsh as your default shell by running the command `chsh -s $(which zsh)`, and then restarting your terminal emulator.
+
+:::success Note
+You may also want to install [Oh-My-Zsh](https://ohmyz.sh/), a popular open-source framework for managing zsh configuration. It provides many useful plugins and themes to enhance your zsh experience.
+:::

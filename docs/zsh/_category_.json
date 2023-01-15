@@ -1,0 +1,8 @@
+{
+  "label": "zsh",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "zsh is a UNIX command interpreter (shell), similar to the Bourne Shell (sh) but includes many enhancements. Some of the key features of zsh include command line editing, built-in spelling correction, programmable command completion, and more. It is often considered more powerful and user-friendly than the default shell on many Linux and macOS systems, the Bourne Again Shell (bash)."
+  }
+}
